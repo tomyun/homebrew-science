@@ -2,7 +2,7 @@ require "formula"
 
 class Admb < Formula
   homepage "http://www.admb-project.org/"
-  url "http://admb-project.googlecode.com/files/admb-11.1.zip"
+  url "https://admb-project.googlecode.com/files/admb-11.1.zip"
   sha1 "d728712cbf9b123e5339b9e77f806c7c49cc3086"
 
   patch :DATA
