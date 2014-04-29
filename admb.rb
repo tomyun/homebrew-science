@@ -18,6 +18,10 @@ class Admb < Formula
     (prefix+"contrib/lib").install Dir["build/dist/contrib/lib/*"]
   end
 
+  test do
+    system "admb"
+  end
+
   def caveats; <<-EOS.undent
     You may need to set up a shell varaible:
       export ADMB_HOME=#{bin}
