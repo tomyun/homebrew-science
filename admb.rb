@@ -9,13 +9,10 @@ class Admb < Formula
 
   def install
     ENV.deparallelize
-
     system "make"
-
     bin.install ["admb", "adcomp", "adlink", "tpl2cpp", "tpl2rem"].map { |name| "build/dist/bin/" + name }
-    include.install Dir["build/dist/include/*"] 
+    include.install Dir["build/dist/include/*"]
     lib.install Dir["build/dist/lib/*"]
-
     (prefix+"contrib/bin").install Dir["build/dist/contrib/bin/*"]
     (prefix+"contrib/include").install Dir["build/dist/contrib/include/*"]
     (prefix+"contrib/lib").install Dir["build/dist/contrib/lib/*"]
