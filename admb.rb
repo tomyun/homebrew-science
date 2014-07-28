@@ -17,7 +17,7 @@ class Admb < Formula
   end
 
   test do
-    system "admb"
+    system "#{bin}/admb"
   end
 
   def caveats; <<-EOS.undent
